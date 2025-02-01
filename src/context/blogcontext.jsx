@@ -19,8 +19,8 @@ export function BlogProvider({ children }) {
       setBlog(data.posts)
       setpage(data.page)
       setTotalpage(data.totalPages)
-      console.log("data found by context")
-      console.log(blog)
+      setloading(false)
+     
     } catch (err) {
       console.log({ Server: "Down" })
       setBlog([])

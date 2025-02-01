@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BlogProvider } from './context/blogcontext'
 import Data from './components/Data'
 
 const App = () => {
+
   return (
    <BlogProvider>
     <Data/>

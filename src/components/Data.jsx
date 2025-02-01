@@ -6,15 +6,16 @@ import { BlogContext } from '../context/blogcontext'
 
 const Data = () => {
 
-    const { FetchData } = useContext(BlogContext)
+    const { FetchData,blog } = useContext(BlogContext)
 
     useEffect(()=>{
         FetchData()
-        console.log("Data fetching called")
+        
     },[])
+    
 
     return (
-        <div className='w-full h-screen '>
+        <div   className='relative'>
             <Header />
             <Blog />
             <Footer />
